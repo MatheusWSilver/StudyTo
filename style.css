@@ -85,12 +85,36 @@ body {
 .linkBlue {
     color: rgb(55, 142, 214);
 }
-.getApp {
+.getTheApp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    /* border: 1px solid black; */
+}
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* appDownload representa as duas ancoras, sendo que defini o valor da propriedade que dita o tamanho das imagens 
+de fundo deles nessa parte, depois separadamente, vou ditar a imagem de fundo de cada um, usando esquema
+para acessar apenas o elemento escolhido, dos elementos daquela classe */
+.appDownload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    /* border: 1px solid red; */
+}
+.appDownload:nth-child(1) {
+    background-image: url('appStore.png');
+}
+.appDownload:nth-child(2) {
+    background-image: url('googlePlay.png');
 }
 /* media query tablet */
 @media (max-width: 1024px) {
